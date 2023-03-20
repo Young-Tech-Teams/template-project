@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* CSS COMPONENT INFO */
+
+.Info input[type="text"],
+.Info input[type="email"] {
+  border: 2px solid #e2e8f0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.Info button {
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.Info button:hover {
+  background-color: #4338ca;
+  cursor: pointer;
+}
+
+/* BUTTON .PARAMS */
+
+.params button {
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.params button:hover {
+  background-color: #4338ca;
+  cursor: pointer;
+}
+
+
+
+/* BUTTON .Distribution */
+
+.Distribution button {
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.Distribution button:hover {
+  background-color: #4338ca;
+  cursor: pointer;
+}
