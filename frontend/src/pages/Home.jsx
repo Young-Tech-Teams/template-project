@@ -6,30 +6,77 @@ import Card from '../components/card';
 
 function Home() {
   return (
-    <div >
+    <div>
       <Navigation />
       <Header />
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className='container'>
+      <div className='container1'>
         <Card
-          title="Compte d'Arthur "
-          description="Crée le 18/02/2022"
+          title="Compte 1"
+          description="Créé le 01/01/2022"
+          balance="3 456 TFBK"
+          abonnement="Adhèsion mensuelle B2C"
           buttonText="texte"
         />
 
         <Card
-          title="Compte d'Arthur "
-          description="Crée le 18/02/2022"
+          title="Compte 2"
+          description="Créé le 02/02/2022"
+          balance="3 456 TFBK"
+          abonnement="Adhèsion mensuelle B2C"
+          buttonText="texte"
+        />
+      
+
+        <Card
+          title="Compte 3"
+          description="Créé le 03/03/2022"
+          balance="3 456 TFBK"
+          abonnement="Adhèsion mensuelle"
           buttonText="texte"
         />
 
-        <Card
-          title="Compte d'Arthur "
-          description="Crée le 18/02/2022"
-          buttonText="texte"
-        />
       </div>
-    </div>
+          {/* PREMIERE COLONNE  */}
+
+
+                      {/* SECONDE COLONNE  */}
+        <div className="container2">
+          <Card
+            title="Compte important"
+            description="Créé le 01/01/2022"
+            buttonText="texte"
+          />
+
+          <Card
+            title="Compte 2"
+            description="Créé le 02/02/2022"
+            buttonText="texte"
+          />
+        </div>
+
+
+
+
+                    {/* TROISIEME COLONNE  */}
+        <div className="container3">
+          <Card
+            title="Compte 1"
+            description="Créé le 01/01/2022"
+            buttonText="texte"
+          />
+
+          <Card
+            title="Compte important"
+            description="Créé le 02/02/2022"
+            buttonText="texte"
+          />
+        </div>
+        </div>
+        
+</div>
+
   );
-}
+} 
 
 export default Home;

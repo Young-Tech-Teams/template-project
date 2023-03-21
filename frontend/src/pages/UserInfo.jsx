@@ -12,8 +12,7 @@ function UserInfo() {
     <div>
       <Navigation />
       <HelloWorld />
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-1">
+      <div className="containerInfo">
           <Info
             title="Information Personnelles"
             nom=""
@@ -23,9 +22,9 @@ function UserInfo() {
             adresse-facturation=""
             wallet=""
             identifiant=""
+            
           />
-        </div>
-        <div className="col-span-1">
+
           <Params
             title="Paramètres du compte"
             title2="Abonnement"
@@ -34,8 +33,7 @@ function UserInfo() {
             text3="Date de souscription: 18/02/2022."
             buttonText="Information et paramètres du compte"
           />
-        </div>
-        <div className="col-span-1">
+        
           <Distribution
             title="Distribution"
             text1="Combien de TFBK distribués par euros dépensés"
@@ -46,7 +44,6 @@ function UserInfo() {
           />
         </div>
       </div>
-    </div>
   );
 }
 

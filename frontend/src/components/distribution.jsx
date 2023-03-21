@@ -39,7 +39,7 @@ function Distribution(props) {
             </div>
 
             {/* BOUTON Sauvegarder */}
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+            <button className="outline hover:outline-blue-500 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline">
                 Sauvegarder
             </button>
         </div>
