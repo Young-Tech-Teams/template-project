@@ -10,6 +10,7 @@ function Params(props) {
             <p>{props.text2}</p>
             <p>{props.text3}</p>
             <button>{props.buttonText}</button>
+            
         </div>
     );
 }

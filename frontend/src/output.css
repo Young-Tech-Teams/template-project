@@ -66,7 +66,6 @@
 .Info button {
   background-color: #302c7f;
   color: #fff;
-  border-radius: 0.25rem;
   padding: 1rem 1rem;
   transition: all 0.2s ease-in-out;
 }
@@ -81,7 +80,6 @@
 .params button {
   background-color: #302c7f;
   color: #fff;
-  border-radius: 0.25rem;
   padding: 1rem 1rem;
   transition: all 0.2s ease-in-out;
 }
@@ -110,16 +108,15 @@
 /* Button Card */
 
 .card button {
-  background-color: #302c7f;
-  color: #fff;
-  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  color: rgb(82, 129, 238);
   padding: 1rem 2rem;
   transition: all 0.2s ease-in-out;
   margin-bottom: 20px;
 }
 
 .card button:hover {
-  background-color: #6b62d0;
+  background-color: #000000;
   cursor: pointe
 }
 
@@ -129,6 +126,15 @@
   background-color: #f1f1f1;
   height: 100%;
   grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  padding-left: 1rem ;
+}
+
+.card2{
+  background-color: #000000;
+  color: #fff;
+  height: 100%;
+  align-items: start;
 }
 
 .container1 {
@@ -141,8 +147,7 @@
   margin-top: 2.5%;
   -webkit-column-width: 300;
           column-width: 300;
-  align-items: center;
-  text-align: center;
+  text-align: start;
   padding: 1rem;
   margin: 1.5rem;
   margin-bottom: 0.2%;
@@ -153,13 +158,13 @@
 
 .container2 {
   display: grid;
+  height: 100%;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 10px;
-  background-color: #f1f1f1;
-  margin-top: 2.5%;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+  grid-column-gap: 20px;
   -webkit-column-width: 300;
           column-width: 300;
-  align-items: center;
+  text-align: start;
   padding: 1rem;
   margin: 1.5rem;
   margin-bottom: 0.2%;
@@ -174,14 +179,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 10px;
-  margin-top: 0.5%;
-  background-color: #f1f1f1;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
   -webkit-column-width: 300;
           column-width: 300;
-  align-items: center;
+  text-align: start;
   padding: 1rem;
   margin: 1.5rem;
-  margin-bottom: 2.5%;
   -webkit-column-count: 3;
           column-count: 3;
   border-radius: 10px;
@@ -226,9 +229,10 @@
 /* ESPACE  */
 
 h1{
-  text-align: center;
+  text-align: start;
   font-size: 2rem;
   margin-bottom: 20px;
+  padding-left: 1rem;
 }
 
 label {
