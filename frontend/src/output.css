@@ -53,6 +53,12 @@
   }
 }
 
+/* FONT FAMILY  */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* CSS COMPONENT INFO */
 
 .Info input[type="text"],
@@ -152,9 +158,9 @@
   margin: 1.5rem;
   margin-bottom: 0.2%;
   border-radius: 10px;
+  align-items: start;
+  /* Modifier la propriété align-items */
 }
-
-/*   CONTAINER 2 COLONNE #2 */
 
 .container2 {
   display: grid;
@@ -171,9 +177,9 @@
   -webkit-column-count: 3;
           column-count: 3;
   border-radius: 10px;
+  align-items: start;
+  /* Modifier la propriété align-items */
 }
-
-/*   CONTAINER 3 COLONNE #3 */
 
 .container3 {
   display: grid;
@@ -188,6 +194,8 @@
   -webkit-column-count: 3;
           column-count: 3;
   border-radius: 10px;
+  align-items: start;
+  /* Modifier la propriété align-items */
 }
 
 /* CONTAINER PAGE INFO  */
@@ -235,6 +243,16 @@ h1{
   padding-left: 1rem;
 }
 
+p{
+  text-align: start;
+  margin-bottom: 20px;
+  padding-left: 1rem;
+}
+
+h2{
+  text-align: center;
+}
+
 label {
   font-weight: bold;
 }
@@ -251,11 +269,10 @@ input {
 button {
   background-color: #302c7f;
   color: white;
-  padding: 10px 20px;
+  padding-left: 1rem;
   border-radius: 5px;
   font-size: 1rem;
-  margin-top: 10px;
-  margin: 10px 30px;
+  margin: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -263,4 +280,49 @@ button {
 button:hover {
   background-color: #6b62d0;
   outline-color: #302c7f;
+}
+
+/* BACKGROUND COLOR HOME CONTAINER 2  */
+
+.container2 .card:first-child {
+  background-color: black;
+  color: white;
+}
+
+.container3 .card:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+.container2 .card:first-child .btn {
+  background-color: black;
+  color: white;
+}
+
+.container2 .card:first-child .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* RESPONSIVE MEDIA  */
+
+@media (max-width: 768px) {
+  .container1 {
+    grid-template-columns: 1fr;
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+
+  .container3 {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .card2 {
+    height: auto;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
 }
