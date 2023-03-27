@@ -1,5 +1,4 @@
 import React from 'react';
-import HelloWorld from '../components/tools/HelloWorld';
 import Navigation from '../components/tools/Navigation';
 import Info from '../components/Info';
 import Params from '../components/params';
@@ -10,9 +9,9 @@ import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 function UserInfo() {
   return (
     <div>
-      <Navigation />
-      <HelloWorld />
-      <div className="containerInfo">
+          <Navigation />
+      <div className="grid grid-cols-3 gap-4">
+        <div className="col-span-1">
           <Info
             title="Information Personnelles"
             nom=""
@@ -22,9 +21,9 @@ function UserInfo() {
             adresse-facturation=""
             wallet=""
             identifiant=""
-            
           />
-
+        </div>
+        <div className="col-span-1">
           <Params
             title="Paramètres du compte"
             title2="Abonnement"
@@ -33,7 +32,8 @@ function UserInfo() {
             text3="Date de souscription: 18/02/2022."
             buttonText="Information et paramètres du compte"
           />
-        
+        </div>
+        <div className="col-span-1">
           <Distribution
             title="Distribution"
             text1="Combien de TFBK distribués par euros dépensés"
@@ -44,6 +44,7 @@ function UserInfo() {
           />
         </div>
       </div>
+    </div>
   );
 }
 

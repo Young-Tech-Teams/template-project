@@ -4,6 +4,7 @@ import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 
+
 function Distribution(props) {
     return (
         <div className="Distribution flex flex-col items-center justify-center space-y-8">
@@ -39,7 +40,7 @@ function Distribution(props) {
             </div>
 
             {/* BOUTON Sauvegarder */}
-            <button className="outline hover:outline-blue-500 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline">
                 Sauvegarder
             </button>
         </div>

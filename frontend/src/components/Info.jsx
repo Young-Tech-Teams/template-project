@@ -7,7 +7,7 @@ function Info(props) {
         <div className="Info ">
             <h1>{props.title}</h1>
             <label htmlFor="nom">Nom:</label>
-            <input type="text" id="nom" value={props.nom} onChange={props.onChangeNom} /><br />
+            <input type="text my-8 " id="nom" value={props.nom} onChange={props.onChangeNom} /><br />
             <label htmlFor="prenom">Prénom:</label>
             <input type="text" id="prenom" value={props.prenom} onChange={props.onChangePrenom} /><br />
             <label htmlFor="email">Email:</label>
@@ -20,12 +20,7 @@ function Info(props) {
             <input type="text" id="wallet" value={props.wallet} onChange={props.onChangeWallet} /><br />
             <label htmlFor="identifiant">Identifiant:</label>
             <input type="text" id="identifiant" value={props.identifiant} onChange={props.onChangeIdentifiant} /><br />
-            <button className="outline hover:outline-blue-500  text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline">
-                Sauvegarder
-            </button>
-            <button className="">
-            Supprimer Compte
-            </button>
+            <button onClick={props.onDeleteAccount}>Supprimer le compte</button>
         </div>
     );
 }

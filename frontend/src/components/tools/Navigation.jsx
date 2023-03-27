@@ -9,9 +9,8 @@ function Navigation() {
           <NavLink exact to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/info">Information Personelles</NavLink>
+          <NavLink to="/info">Infos Personnelles</NavLink>
         </li>
-
       </ul>
     </nav>
   );
